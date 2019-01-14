@@ -62,18 +62,28 @@ public class Player {
             }
         }
         for (String hand: hands.newHigher
-             ) {
+        ) {
             if(hand.equals(ranks)) {
                 cardClass = 1;
             }
         }
+        for (String hand: hands.higher
+        ) {
+            if(hand.equals(ranks)) {
+                cardClass = 0;
+            }
+        }
+
 
         if (activePlayers > 3) {
             if (cardClass == 1) return money;
             else return 0;
         } else {
-            if (cardClass == 1) return money;
-            else return 0;
+            if (cardClass == 0) return money;
+            else {
+                if (buyin + 50 <= money) return buyin + 50;
+                else return 0;
+            }
         }
     }
 
