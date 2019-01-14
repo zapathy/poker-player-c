@@ -1,3 +1,4 @@
+package org.leanpoker.player;
 
 public class StartingHands {
 
@@ -162,7 +163,7 @@ public class StartingHands {
             this.second6039,
             this.second6040,
             this.second6041,
-    }
+    };
 
     private String[] almostWorst = {
             this.almostWorst1, this.almostWorst2, this.almostWorst3, this.almostWorst4, this.almostWorst5,
@@ -176,12 +177,12 @@ public class StartingHands {
             this.almostWorst41, this.almostWorst42, this.almostWorst43, this.almostWorst44, this.almostWorst45,
             this.almostWorst46, this.almostWorst47, this.almostWorst48, this.almostWorst49, this.almostWorst50,
             this.almostWorst51, this.almostWorst52, this.almostWorst53, this.almostWorst54, this.almostWorst55,
-    }
+    };
     
     private String[] worst = {
             this.worst1, this.worst2, this.worst3, this.worst4, this.worst5, this.worst6, this.worst7, this.worst8,
             this.worst9, this.worst10
-    }
+    };
 
 
 }
