@@ -27,7 +27,7 @@ public class Player {
                     JsonPrimitive rank = cardAsObject.getAsJsonPrimitive("rank");
                     ranks+=rank.getAsString();
                 }
-                JsonElement moneyElement = playersObject.getAsJsonPrimitive();
+                JsonElement moneyElement = playersObject.getAsJsonPrimitive("stack");
                 JsonPrimitive moneyPrimitive = moneyElement.getAsJsonPrimitive();
                 money = moneyPrimitive.getAsInt();
             }
