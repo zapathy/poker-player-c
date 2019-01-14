@@ -50,12 +50,6 @@ public class Player {
             }
         }
 
-        for (String hand : hands.second
-        ) {
-            if (hand.equals(ranks)) {
-                return money;
-            }
-        }
         return 0;
 
     }
