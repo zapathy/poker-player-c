@@ -41,10 +41,7 @@ public class Player {
             }
         }
 
-        System.err.println("cards: "+ranks);
-        System.err.println("money: "+money);
-        System.err.println("buyin: "+buyin);
-        System.err.println("active players: "+activePlayers);
+        System.err.println("cards: "+ranks+", money: "+money+", buyin: "+buyin+", active players: "+activePlayers);
 
         StartingHands hands = new StartingHands();
         for (String hand: hands.newHigher
