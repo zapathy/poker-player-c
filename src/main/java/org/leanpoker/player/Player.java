@@ -11,7 +11,7 @@ public class Player {
         System.err.println(request.toString());
         JsonParser parser = new JsonParser();
         System.err.println(parser);
-        return 333;
+        return 1000;
     }
 
     public static void showdown(JsonElement game) {
