@@ -121,6 +121,9 @@ public class StartingHands {
 
     String[] higher = {this.higher701, this.higher702, this.higher703, this.higher704, this.higher705, this.higher706};
 
+    String[] newHigher = {"AA", "KK","QQ","JJ","1010","99","88",
+            "AK","KA","AQ","QA","KQ","QK","KJ","JK","QJ","JQ","77","66"};
+
     String[] second = {
             this.second601,
             this.second602,
