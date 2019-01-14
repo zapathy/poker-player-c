@@ -33,8 +33,8 @@ public class Player {
             }
         }
 
-        System.err.println(ranks);
-        System.err.println(money);
+        System.err.println("cards: "+ranks);
+        System.err.println("money: "+money);
 
         StartingHands hands = new StartingHands();
         for (String hand: hands.newHigher
