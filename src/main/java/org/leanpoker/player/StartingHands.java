@@ -119,9 +119,9 @@ public class StartingHands {
     private String worst10 = "23";
 
 
-    private String[] higher = {this.higher701, this.higher702, this.higher703, this.higher704, this.higher705, this.higher706};
+    String[] higher = {this.higher701, this.higher702, this.higher703, this.higher704, this.higher705, this.higher706};
 
-    private String[] second = {
+    String[] second = {
             this.second601,
             this.second602,
             this.second603,
@@ -165,7 +165,7 @@ public class StartingHands {
             this.second6041,
     };
 
-    private String[] almostWorst = {
+    String[] almostWorst = {
             this.almostWorst1, this.almostWorst2, this.almostWorst3, this.almostWorst4, this.almostWorst5,
             this.almostWorst6, this.almostWorst7, this.almostWorst8, this.almostWorst9, this.almostWorst10,
             this.almostWorst11, this.almostWorst12, this.almostWorst13, this.almostWorst14, this.almostWorst15,
@@ -179,7 +179,7 @@ public class StartingHands {
             this.almostWorst51, this.almostWorst52, this.almostWorst53, this.almostWorst54, this.almostWorst55,
     };
     
-    private String[] worst = {
+    String[] worst = {
             this.worst1, this.worst2, this.worst3, this.worst4, this.worst5, this.worst6, this.worst7, this.worst8,
             this.worst9, this.worst10
     };
