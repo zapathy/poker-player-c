@@ -46,11 +46,16 @@ public class Player {
         for (String hand : hands.newHigher
         ) {
             if (hand.equals(ranks)) {
-                if (buyin + 50 <= money) return buyin + 50;
-                return 0;
+                return money;
             }
         }
 
+        for (String hand : hands.second
+        ) {
+            if (hand.equals(ranks)) {
+                return money;
+            }
+        }
         return 0;
 
     }
