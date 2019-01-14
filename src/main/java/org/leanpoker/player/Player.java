@@ -1,16 +1,16 @@
 package org.leanpoker.player;
 
 import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+import com.google.gson.JsonObject;
 
 public class Player {
 
-    static final String VERSION = "0.2" ;
+    static final String VERSION = "0.3" ;
 
     public static int betRequest(JsonElement request) {
         System.err.println(request.toString());
-        JsonParser parser = new JsonParser();
-        System.err.println(parser);
+        JsonObject rootObject = request.getAsJsonObject();
+        System.err.println(rootObject.get("tournament_id"));
         return 1000;
     }
 
