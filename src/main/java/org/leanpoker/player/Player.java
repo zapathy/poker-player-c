@@ -12,8 +12,10 @@ public class Player {
     public static int betRequest(JsonElement request) {
         System.err.println("new version 21ht190h3490h90gth3w-5g09h3904");
         String ranks = "";
+        int cardClass = -1;
         int money = 0;
         int buyin;
+        int activePlayers = 0;
         JsonObject rootObject = request.getAsJsonObject();
         JsonArray players = rootObject.getAsJsonArray("players");
         JsonPrimitive buyinPrimitive = rootObject.getAsJsonPrimitive("current_buy_in");
@@ -21,6 +23,9 @@ public class Player {
         for (JsonElement playersElement : players
         ) {
             JsonObject playersObject = playersElement.getAsJsonObject();
+            if (playersObject.getAsJsonPrimitive("status").getAsString().equals("active")) {
+                activePlayers += 1;
+            }
             if (playersObject.getAsJsonPrimitive("name").getAsString().equals("C")) {
                 JsonElement cardsElement = playersObject.getAsJsonArray("hole_cards");
                 JsonArray cardsArray = cardsElement.getAsJsonArray();
@@ -39,12 +44,20 @@ public class Player {
         System.err.println("cards: "+ranks);
         System.err.println("money: "+money);
         System.err.println("buyin: "+buyin);
+        System.err.println("active players: "+activePlayers);
 
         StartingHands hands = new StartingHands();
         for (String hand: hands.newHigher
              ) {
             if(hand.equals(ranks)) {
+                cardClass = 1;
                 return money;
+            }
+        }
+        for (String hand: hands.second
+        ) {
+            if(hand.equals(ranks)) {
+                cardClass = 2;
             }
         }
 
