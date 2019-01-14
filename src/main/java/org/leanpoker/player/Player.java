@@ -43,48 +43,15 @@ public class Player {
 //        System.err.println("cards: "+ranks+", money: "+money+", buyin: "+buyin+", active players: "+activePlayers);
 
         StartingHands hands = new StartingHands();
-        for (String hand: hands.worst
-        ) {
-            if(hand.equals(ranks)) {
-                cardClass = 5;
-            }
-        }
-        for (String hand: hands.almostWorst
-        ) {
-            if(hand.equals(ranks)) {
-                cardClass = 4;
-            }
-        }
-        for (String hand: hands.second
-        ) {
-            if(hand.equals(ranks)) {
-                cardClass = 2;
-            }
-        }
         for (String hand: hands.newHigher
         ) {
             if(hand.equals(ranks)) {
-                cardClass = 1;
-            }
-        }
-        for (String hand: hands.higher
-        ) {
-            if(hand.equals(ranks)) {
-                cardClass = 0;
+                return money;
             }
         }
 
+        return 0;
 
-        if (activePlayers > 3) {
-            if (cardClass == 1) return money;
-            else return 0;
-        } else {
-            if (cardClass == 0) return money;
-            else {
-                if (buyin + 50 <= money) return buyin + 50;
-                else return 0;
-            }
-        }
     }
 
     public static void showdown(JsonElement game) {
