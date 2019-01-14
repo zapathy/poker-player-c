@@ -10,7 +10,6 @@ public class Player {
     static final String VERSION = "1.2";
 
     public static int betRequest(JsonElement request) {
-        System.err.println("new version 21ht190h3490h90gth3w-5g09h3904");
         String ranks = "";
         int cardClass = -1;
         int money = 0;
@@ -41,7 +40,7 @@ public class Player {
             }
         }
 
-        System.err.println("cards: "+ranks+", money: "+money+", buyin: "+buyin+", active players: "+activePlayers);
+//        System.err.println("cards: "+ranks+", money: "+money+", buyin: "+buyin+", active players: "+activePlayers);
 
         StartingHands hands = new StartingHands();
         for (String hand: hands.worst
@@ -73,7 +72,7 @@ public class Player {
             if (cardClass == 1) return money;
             else return 0;
         } else {
-            if ((cardClass == -1) | (cardClass == 2) | (cardClass == 1)) {
+            if ((cardClass == 2) | (cardClass == 1)) {
                 return money;
             } else return 0;
         }
