@@ -28,11 +28,11 @@ public class Player {
             if (playersObject.getAsJsonPrimitive("name").getAsString().equals("C")) {
                 JsonElement cardsElement = playersObject.getAsJsonArray("hole_cards");
                 JsonArray cardsArray = cardsElement.getAsJsonArray();
-                for (JsonElement card: cardsArray
-                     ) {
+                for (JsonElement card : cardsArray
+                ) {
                     JsonObject cardAsObject = card.getAsJsonObject();
                     JsonPrimitive rank = cardAsObject.getAsJsonPrimitive("rank");
-                    ranks+=rank.getAsString();
+                    ranks += rank.getAsString();
                 }
                 JsonElement moneyElement = playersObject.getAsJsonPrimitive("stack");
                 JsonPrimitive moneyPrimitive = moneyElement.getAsJsonPrimitive();
@@ -43,10 +43,11 @@ public class Player {
 //        System.err.println("cards: "+ranks+", money: "+money+", buyin: "+buyin+", active players: "+activePlayers);
 
         StartingHands hands = new StartingHands();
-        for (String hand: hands.newHigher
+        for (String hand : hands.newHigher
         ) {
-            if(hand.equals(ranks)) {
-                return money;
+            if (hand.equals(ranks)) {
+                if (buyin + 50 <= money) return buyin + 50;
+                return 0;
             }
         }
 
