@@ -18,9 +18,9 @@ public class Player {
         for (JsonElement playersElement : players
         ) {
             JsonObject playersObject = playersElement.getAsJsonObject();
-            System.err.println("current player: "+playersObject);
-            System.err.println("c. player name"+playersObject.getAsJsonPrimitive("name"));
-            if (playersObject.getAsJsonPrimitive("name").equals("C")) {
+//            System.err.println("current player: "+playersObject);
+//            System.err.println("c. player name"+playersObject.getAsJsonPrimitive("name"));
+            if (playersObject.getAsJsonPrimitive("name").getAsString().equals("C")) {
                 JsonElement cardsElement = playersObject.getAsJsonPrimitive("hole_cards");
                 JsonObject cardsObject = cardsElement.getAsJsonObject();
                 System.err.println("as element: " + cardsElement);
