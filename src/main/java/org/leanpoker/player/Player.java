@@ -13,8 +13,11 @@ public class Player {
         System.err.println("new version 21ht190h3490h90gth3w-5g09h3904");
         String ranks = "";
         int money = 0;
+        int buyin;
         JsonObject rootObject = request.getAsJsonObject();
         JsonArray players = rootObject.getAsJsonArray("players");
+        JsonPrimitive buyinPrimitive = rootObject.getAsJsonPrimitive("current_buy_in");
+        buyin = buyinPrimitive.getAsInt();
         for (JsonElement playersElement : players
         ) {
             JsonObject playersObject = playersElement.getAsJsonObject();
@@ -35,6 +38,7 @@ public class Player {
 
         System.err.println("cards: "+ranks);
         System.err.println("money: "+money);
+        System.err.println("buyin: "+buyin);
 
         StartingHands hands = new StartingHands();
         for (String hand: hands.newHigher
