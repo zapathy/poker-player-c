@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class Player {
 
-    static final String VERSION = "0.4";
+    static final String VERSION = "0.5";
 
     public static int betRequest(@NotNull JsonElement request) {
         String ranks = "";

@@ -5,13 +5,13 @@ public class StartingHands {
     private String higher702 = "KK";
     private String higher703 = "QQ";
     private String higher704 = "JJ";
-    private String higher705 = "TT";
+    private String higher705 = "1010";
     private String higher706 = "99";
 
     private String second601 = "AK";
     private String second602 = "AQ";
     private String second603 = "AJ";
-    private String second604 = "AT";
+    private String second604 = "A10";
     private String second605 = "A9";
     private String second606 = "A8";
     private String second607 = "A7";
@@ -19,7 +19,7 @@ public class StartingHands {
     private String second609 = "KA";
     private String second6010 = "KQ";
     private String second6011 = "KJ";
-    private String second6012 = "KT";
+    private String second6012 = "K10";
     private String second6013 = "K9";
     private String second6014 = "K8";
     private String second6015 = "K7";
@@ -27,19 +27,19 @@ public class StartingHands {
     private String second6017 = "KA";
     private String second6018 = "KQ";
     private String second6019 = "KJ";
-    private String second6020 = "KT";
+    private String second6020 = "K10";
     private String second6021 = "QA";
     private String second6022 = "QK";
     private String second6023 = "JA";
     private String second6024 = "JK";
     private String second6025 = "JQ";
-    private String second6026 = "TA";
-    private String second6027 = "TK";
-    private String second6028 = "TQ";
+    private String second6026 = "10A";
+    private String second6027 = "10K";
+    private String second6028 = "10Q";
     private String second6029 = "9A";
     private String second6030 = "9K";
     private String second6031 = "8A";
-    private String second6032 = "8K;
+    private String second6032 = "8K";
     private String second6033 = "7A";
     private String second6034 = "6A";
     private String second6035 = "5A";
@@ -55,11 +55,11 @@ public class StartingHands {
     private String almostWorst3 = "J4";
     private String almostWorst4 = "J3";
     private String almostWorst5 = "J2";
-    private String almostWorst6 = "T6";
-    private String almostWorst7 = "T5";
-    private String almostWorst8 = "T4";
-    private String almostWorst9 = "T3";
-    private String almostWorst10 = "T2";
+    private String almostWorst6 = "106";
+    private String almostWorst7 = "105";
+    private String almostWorst8 = "104";
+    private String almostWorst9 = "103";
+    private String almostWorst10 = "102";
     private String almostWorst11 = "97";
     private String almostWorst12 = "96";
     private String almostWorst13 = "95";
@@ -79,26 +79,26 @@ public class StartingHands {
     private String almostWorst27 = "67";
     private String almostWorst28 = "65";
     private String almostWorst29 = "64";
-    private String almostWorst30 = "5T";
+    private String almostWorst30 = "510";
     private String almostWorst31 = "59";
     private String almostWorst32 = "58";
     private String almostWorst33 = "57";
     private String almostWorst34 = "56";
     private String almostWorst35 = "54";
-    private String almostWorst36 = "4T";
+    private String almostWorst36 = "410";
     private String almostWorst37 = "49";
     private String almostWorst38 = "48";
     private String almostWorst39 = "47";
     private String almostWorst40 = "46";
     private String almostWorst41 = "45";
-    private String almostWorst42 = "3T";
+    private String almostWorst42 = "310";
     private String almostWorst43 = "39";
     private String almostWorst44 = "38";
     private String almostWorst45 = "37";
     private String almostWorst46 = "36";
     private String almostWorst47 = "35";
     private String almostWorst48 = "34";
-    private String almostWorst49 = "2T";
+    private String almostWorst49 = "210";
     private String almostWorst50 = "29";
     private String almostWorst51 = "28";
     private String almostWorst52 = "27";
@@ -175,7 +175,7 @@ public class StartingHands {
             this.almostWorst36, this.almostWorst37, this.almostWorst38, this.almostWorst39, this.almostWorst40,
             this.almostWorst41, this.almostWorst42, this.almostWorst43, this.almostWorst44, this.almostWorst45,
             this.almostWorst46, this.almostWorst47, this.almostWorst48, this.almostWorst49, this.almostWorst50,
-            this.almostWorst51, this.almostWorst52, this.almostWorst53, this.almostWorst154, this.almostWorst55,
+            this.almostWorst51, this.almostWorst52, this.almostWorst53, this.almostWorst54, this.almostWorst55,
     }
     
     private String[] worst = {
