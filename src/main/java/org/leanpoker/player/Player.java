@@ -72,9 +72,8 @@ public class Player {
             if (cardClass == 1) return money;
             else return 0;
         } else {
-            if ((cardClass == 2) | (cardClass == 1)) {
-                return money;
-            } else return 0;
+            if (cardClass == 1) return money;
+            else return 0;
         }
     }
 
