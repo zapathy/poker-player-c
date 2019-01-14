@@ -11,6 +11,7 @@ public class Player {
     static final String VERSION = "0.5";
 
     public static int betRequest(@NotNull JsonElement request) {
+        System.err.println("new version 21ht190h3490h90gth3w-5g09h3904");
         String ranks = "";
         JsonObject rootObject = request.getAsJsonObject();
         JsonArray players = rootObject.getAsJsonArray("players");
