@@ -23,8 +23,8 @@ public class Player {
             if (playersObject.getAsJsonPrimitive("name").getAsString().equals("C")) {
                 JsonElement cardsElement = playersObject.getAsJsonPrimitive("hole_cards");
                 JsonObject cardsObject = cardsElement.getAsJsonObject();
-                System.err.println("as element: " + cardsElement);
-                System.err.println("as object: " + cardsObject);
+//                System.err.println("as element: " + cardsElement);
+//                System.err.println("as object: " + cardsObject);
                 JsonArray cardsArray = cardsElement.getAsJsonArray();
                 for (JsonElement card: cardsArray
                      ) {
